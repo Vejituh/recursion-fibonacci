@@ -7,7 +7,17 @@ def fibs(n)
     a = a + b
     b = temp
     n = n-1
-    puts b
+    return b
   end
 end
-fibs(10)
+# p fibs(10)
+
+def fibs_rec(n)
+  return 0 if n == 0
+  return 1 if n == 1
+  return fibs_rec(n-1) + fibs_rec(n-2)
+end
+p fibs_rec(10)
+
+
+
