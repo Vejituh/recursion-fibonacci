@@ -18,6 +18,3 @@ def fibs_rec(n)
   return fibs_rec(n-1) + fibs_rec(n-2)
 end
 p fibs_rec(10)
-
-
-
